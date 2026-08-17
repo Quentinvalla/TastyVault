@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
     <title>TastyVault - Votre livre de recettes</title>
     
-    <!-- ===== ICÔNES PWA PERSONNALISÉES ===== -->
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZAAAAV5JREFUOE9jZMAFZs2apc7AwPD///9fDLgAIwL4P3/+vIWBgUGQgYHhPxMw/P///z8DA0MAAwPDfwYGBkFmZmYBBgYGBgYGBgZ4hP///3//5s2b9ZiYmLYyMjIuZWBg+AtTtHv37v8MDAw/GBgYdjEwMDxkZGT8z8DA8I8JRhgYGNQYGBieMzAwMNy5c+c/gwBhJwMDAwEDg8A/BlE8hJGR8T/MIwwMDBsZGBg+MzAw/MdW5UmTJn1mYGBQO3/+vCYDg8B/BgYBhkOHDh39//nz579MTEysurq6nAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwEAAryJYYv0H36MAAAAASUVORK5CYII=" />
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZAAAAb1JREFUWEftl7FKA0EQhr+5E2sFxc6fYGOPYKFYWiWoqJWNrVhZioWlKFYWSiCWpzCBhKQSERuB2PgCNgq+gsVdggY3uxfeXpK7TWbv/icwOTnL7nz77787l5H8R4wfsI5sPp+vaZr2mM/nPxh8YpFIBLW1Xq/bdjKZZKPRKHu9XvY6eAAikUikUCi8lMvlF52sVqvFptMpZ7NZdjAYnGGnWCy+5vP5HhL4RD0QKKC/3+/LbDYb9Xo9LpVKPAwglUp5zWbT1el0+Pn5mZ8B35RSqS5JkgkGg9H9/f36dnYQ1Ov1DmMtTdPM7jsI2mw2rW63213PB4NoNMqA4fF43PHJ2+2Wnc1mfLlcimCxWLjL5ZJJ0/QR5Uy53W4j+ONwOJyh/vsDJBKJqVQqvbRareh55iQcDidHR0dPo9HIwZ3H0/X19TO+YeCjWkd4hAKmNzdkqH8kSXKgVUATv5wCOFW93W4/URCr1crebDZ+6G3r8ejoaJTL5T4QyKMU+Xq9HimTyeSEe3A0AtJoNBRUOjvsuN1uP7jDqwWCwWBQKpW+q9XqA6ZWZ7/fT9IDT78Azc5/oV5Ux3UAAAAASUVORK5CYII=" />
-    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZAAAAjRJREFUeJzt3VtOwzAUheG1CEiBnbD+BHZmUyrBynKd9uyUMAuV+JVF65sk9nOBjybDMM9FzSBZaJ5QHEe/dBHvG9rzHG5C8xz35hr7hutU3DNBkC7C/5+GLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkOTZp5p6DI0aeaZhi5Dk2aeaegyNGnmmYYuQ5NmnmnoMjRp5pmGLkP/Ql9f31e73e7BYDCA0Wg0H41G72EYvtwwAMF0OgXQcG/32A0AAAAASUVORK5CYII=" />
+    <!-- ===== ICÔNES PWA ===== -->
+    <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZAAAAklJREFUeJzt3c2OokAUhuH6MiAmTtz5Aky8a5OZmFjWbhc+eybqTOyCxM3EixhNt3dTQQl4Kcrxp9vCPMl3cKhq2l9BcOAiJhNoNpvg+fkZyLIsIcsyQaZpGmg2m7zeHhh8uKYTXMf1DhgMtlrLbrfPArUXy6p0vxgYQwJ5Pp8CN3q9/ncjGA67x3k1fJpkgkS3hYXdfS+n0xnpdGqqqirTMEwmLJtNRKvVi7RarYkqqud57wK5Xi9Ey7LodDoRaTQaK4osy4JEAkksyzqDhgQBCUFAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEC+5fX1lVZVPSRho9HglmUx27LMVzZt2/YFUalUKu/Pz08/Z2dnp/3+AwYByYIghKbrwptu7H9l23YXspVKZcO2bduyLMuGGAwGRK/Xm5AUK5XKb4yJbrfLH47H/yRwPB6JNE1zNpsr8+71+4PZbNaDvL6+ErZp0+4FAAYBCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSED+JY/HE2maNvFse4ZhmqVSqVcqlcZ/36ffC3/YyD3Z5jTnAAAAAElFTkSuQmCC" />
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZAAAAklJREFUeJzt3c2OokAUhuH6MiAmTtz5Aky8a5OZmFjWbhc+eybqTOyCxM3EixhNt3dTQQl4Kcrxp9vCPMl3cKhq2l9BcOAiJhNoNpvg+fkZyLIsIcsyQaZpGmg2m7zeHhh8uKYTXMf1DhgMtlrLbrfPArUXy6p0vxgYQwJ5Pp8CN3q9/ncjGI67x3k1fJpkgkS3hYXdfS+n0xnpdGqqqirTMEwmLJtNRKvVi7RarYkqqud57wK5Xi9Ey7LodDoRaTQaK4osy4JEAkksyzqDhgQBCUFAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAG5R1EU3HZdd9+27T3keDz+uGmaf/djDwJ5PB6Ty7Lsl1prtLe6P3tNv9XU47pcTiihqS3LqsUwDDOfz+e0WS7Xc89BAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEACEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgAQkIAEJSEAC8h//AHZ3t4ROJidvAAAAAElFTkSuQmCC" />
     
     <!-- ===== MANIFESTE PWA ===== -->
     <link rel="manifest" href="data:application/json,{
         &quot;name&quot;: &quot;TastyVault - Livre de recettes&quot;,
         &quot;short_name&quot;: &quot;TastyVault&quot;,
-        &quot;description&quot;: &quot;Votre livre de recettes numérique&quot;,
+        &quot;description&quot;: &quot;Votre livre de recettes num&eacute;rique&quot;,
         &quot;start_url&quot;: &quot;/&quot;,
         &quot;display&quot;: &quot;standalone&quot;,
         &quot;orientation&quot;: &quot;portrait&quot;,
@@ -32,6 +31,12 @@
                 &quot;sizes&quot;: &quot;192x192&quot;,
                 &quot;type&quot;: &quot;image/svg+xml&quot;,
                 &quot;purpose&quot;: &quot;any maskable&quot;
+            },
+            {
+                &quot;src&quot;: &quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23D4A574;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23B8895C;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='96' fill='url(%23g)'/%3E%3Ccircle cx='256' cy='180' r='60' fill='%23FFFFFF' opacity='0.15'/%3E%3Cpath d='M160 180 Q256 80 352 180 L352 380 Q256 320 160 380 Z' fill='%23FFFFFF' opacity='0.9'/%3E%3Cpath d='M176 200 Q256 120 336 200 L336 360 Q256 300 176 360 Z' fill='%23FFFFFF'/%3E%3Cpath d='M192 220 Q256 160 320 220 L320 340 Q256 280 192 340 Z' fill='%23D4A574' opacity='0.3'/%3E%3Ctext x='256' y='435' font-size='80' text-anchor='middle' font-family='Georgia,serif' font-weight='bold' fill='%23FFFFFF'%3ETV%3C/text%3E%3C/svg%3E&quot;,
+                &quot;sizes&quot;: &quot;512x512&quot;,
+                &quot;type&quot;: &quot;image/svg+xml&quot;,
+                &quot;purpose&quot;: &quot;maskable&quot;
             }
         ]
     }" />
@@ -630,48 +635,94 @@
             font-size: 0.85rem;
         }
 
-        /* ===== SCANNER MODAL ===== */
-        .scanner-area {
-            background: var(--bg-main);
+        /* ===== SCANNER ===== */
+        .scanner-container {
+            background: var(--bg-card);
             border-radius: var(--radius);
-            padding: 20px;
-            text-align: center;
-            border: 2px dashed var(--border);
-            transition: var(--transition);
-            min-height: 200px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .scanner-viewfinder {
+            position: relative;
+            background: #000;
+            min-height: 300px;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 16px;
+            overflow: hidden;
         }
 
-        .scanner-area:hover {
-            border-color: var(--primary);
-        }
-
-        .scanner-area .preview-image {
-            max-width: 100%;
-            max-height: 300px;
-            border-radius: var(--radius-sm);
+        .scanner-viewfinder video,
+        .scanner-viewfinder .preview-image {
+            width: 100%;
+            max-height: 500px;
             object-fit: contain;
+            background: #000;
         }
 
-        .scanner-area .scan-actions {
+        .scanner-viewfinder .placeholder {
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .scanner-viewfinder .placeholder i {
+            font-size: 4rem;
+            color: rgba(255,255,255,0.3);
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .scanner-controls {
+            padding: 16px;
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
             justify-content: center;
+            background: var(--bg-main);
+            border-top: 1px solid var(--border);
         }
 
-        .scanner-area .scan-actions button {
+        .scanner-controls .btn {
             min-width: 120px;
         }
 
+        .scanner-controls .btn-capture {
+            background: #FF4757;
+            color: white;
+            border-color: #FF4757;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 0 0 4px rgba(255,71,87,0.3);
+        }
+
+        .scanner-controls .btn-capture:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 6px rgba(255,71,87,0.4);
+        }
+
+        .scanner-controls .btn-capture:active {
+            transform: scale(0.9);
+        }
+
+        /* ===== SCANNER PROGRESS ===== */
         .scanner-progress {
-            width: 100%;
-            max-width: 400px;
-            margin: 12px auto;
+            padding: 16px;
+            background: var(--bg-main);
+            border-top: 1px solid var(--border);
+            display: none;
+        }
+
+        .scanner-progress.active {
+            display: block;
         }
 
         .scanner-progress .progress-bar {
@@ -693,7 +744,55 @@
         .scanner-progress .progress-text {
             font-size: 0.85rem;
             color: var(--text-secondary);
-            margin-top: 4px;
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        /* ===== SCAN RESULT ===== */
+        .scan-result {
+            padding: 16px;
+            background: var(--bg-main);
+            border-top: 1px solid var(--border);
+            display: none;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .scan-result.active {
+            display: block;
+        }
+
+        .scan-result .result-title {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .scan-result .result-field {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 4px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .scan-result .result-field .label {
+            font-weight: 600;
+            min-width: 100px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .scan-result .result-field .value {
+            flex: 1;
+            font-size: 0.9rem;
+        }
+
+        .scan-result .result-actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
         }
 
         /* ===== MODAL ===== */
@@ -1372,8 +1471,9 @@
             .section-title { font-size: 1.3rem; }
             .cook-mode { padding: 16px; }
             .cook-mode .step-nav button { padding: 10px 20px; min-width: 90px; font-size: 0.9rem; }
-            .scanner-area { padding: 12px; min-height: 150px; }
-            .scanner-area .preview-image { max-height: 200px; }
+            .scanner-viewfinder { min-height: 200px; }
+            .scanner-controls .btn { min-width: 80px; padding: 8px 16px; }
+            .scanner-controls .btn-capture { width: 56px; height: 56px; font-size: 1.4rem; }
         }
 
         @media (min-width: 641px) and (max-width: 1024px) {
@@ -1397,6 +1497,8 @@
             .bottom-nav .nav-add i { font-size: 1.4rem; }
             .bottom-nav button { min-width: 44px; font-size: 0.6rem; }
             .bottom-nav button i { font-size: 1.2rem; }
+            .scanner-controls .btn { min-width: 60px; padding: 6px 12px; font-size: 0.8rem; }
+            .scanner-controls .btn-capture { width: 48px; height: 48px; font-size: 1.2rem; }
         }
 
         /* ===== ANIMATIONS ===== */
@@ -1412,6 +1514,16 @@
 
         @keyframes spin {
             to { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255,71,87,0.5); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(255,71,87,0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255,71,87,0); }
+        }
+
+        .pulse-ring {
+            animation: pulse-ring 2s infinite;
         }
 
         .spinner {
@@ -1477,6 +1589,11 @@
             color: white;
         }
 
+        .toast.info {
+            background: var(--primary);
+            color: white;
+        }
+
         /* ===== PRINT ===== */
         @media print {
             .app-header, .bottom-nav, .header-actions, .btn, .modal-overlay,
@@ -1489,41 +1606,6 @@
             .main-content { padding: 0; }
             .recipe-view-section .step-item { break-inside: avoid; }
         }
-
-        /* ===== SCAN RESULT REVIEW ===== */
-        .scan-result {
-            background: var(--bg-main);
-            border-radius: var(--radius);
-            padding: 16px;
-            margin-top: 12px;
-        }
-
-        .scan-result .detected-field {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 4px 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .scan-result .detected-field .label {
-            font-weight: 600;
-            min-width: 100px;
-            color: var(--text-secondary);
-        }
-
-        .scan-result .detected-field .value {
-            flex: 1;
-        }
-
-        .scan-result .detected-field .confidence {
-            font-size: 0.7rem;
-            color: var(--text-light);
-        }
-
-        .scan-result .confidence-high { color: var(--success); }
-        .scan-result .confidence-medium { color: var(--warning); }
-        .scan-result .confidence-low { color: var(--danger); }
     </style>
 </head>
 <body>
@@ -1733,7 +1815,9 @@
             cookSteps: [],
             cookIndex: 0,
             searchQuery: '',
-            searchFilters: { category: '', difficulty: '', favorite: false },
+            scanImageData: null,
+            scanResult: null,
+            scanStream: null,
         };
 
         // ============================================================
@@ -1744,6 +1828,12 @@
         const overlay = document.getElementById('modalOverlay');
 
         function render(page, data) {
+            // Arrêter le stream de la caméra si on change de page
+            if (state.scanStream) {
+                state.scanStream.getTracks().forEach(track => track.stop());
+                state.scanStream = null;
+            }
+
             switch (page) {
                 case 'home': renderHome(); break;
                 case 'recipes': renderRecipes(data); break;
@@ -1758,7 +1848,6 @@
                 case 'scan': renderScan(); break;
                 default: renderHome();
             }
-            // update active nav
             document.querySelectorAll('.bottom-nav button').forEach(b => {
                 b.classList.toggle('active', b.dataset.page === page);
             });
@@ -1772,7 +1861,6 @@
             const total = state.recipes.length;
             const favs = state.recipes.filter(r => r.favorite).length;
             const cats = state.categories.length;
-
             const recent = [...state.recipes]
                 .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
                 .slice(0, 6);
@@ -1802,20 +1890,20 @@
                             <h3>Votre livre est vide</h3>
                             <p>Commencez à construire votre collection de recettes personnelles.</p>
                             <div class="btn-group">
-                                <button class="btn btn-primary" onclick="openScanModal()">
+                                <button class="btn btn-primary" onclick="navigate('scan')">
                                     <i class="fas fa-camera"></i> Scanner une recette
                                 </button>
-                                <button class="btn btn-outline" onclick="openAddModal()">
+                                <button class="btn btn-outline" onclick="navigate('add')">
                                     <i class="fas fa-edit"></i> Ajouter manuellement
                                 </button>
                             </div>
                         </div>
                     ` : `
                         <div class="flex-center gap-8" style="flex-wrap:wrap;margin-bottom:16px;">
-                            <button class="btn btn-primary" onclick="openScanModal()">
+                            <button class="btn btn-primary" onclick="navigate('scan')">
                                 <i class="fas fa-camera"></i> Scanner
                             </button>
-                            <button class="btn btn-outline" onclick="openAddModal()">
+                            <button class="btn btn-outline" onclick="navigate('add')">
                                 <i class="fas fa-plus"></i> Ajouter
                             </button>
                             <button class="btn" onclick="navigate('categories')">
@@ -1846,7 +1934,6 @@
             const cat = state.categories.find(c => c.id === recipe.categoryId);
             const catName = cat ? cat.icon + ' ' + cat.name : 'Sans catégorie';
             const time = recipe.totalTime || recipe.prepTime + recipe.cookTime + recipe.restTime || '—';
-            const diff = recipe.difficulty || 'Facile';
             const img = recipe.image ? `<img src="${recipe.image}" alt="${recipe.title}" loading="lazy" onerror="this.style.display='none'">` :
                 `<i class="fas fa-utensils" style="font-size:3rem;color:var(--primary-light);"></i>`;
 
@@ -1891,7 +1978,7 @@
                 <div class="animate-in">
                     <div class="flex-center" style="justify-content:space-between;flex-wrap:wrap;gap:8px;">
                         <h1 class="section-title" style="margin-bottom:0;">📋 Toutes les recettes</h1>
-                        <button class="btn btn-primary" onclick="openAddModal()">
+                        <button class="btn btn-primary" onclick="navigate('add')">
                             <i class="fas fa-plus"></i> Ajouter
                         </button>
                     </div>
@@ -1900,7 +1987,7 @@
                             <i class="fas fa-list"></i>
                             <h3>Aucune recette</h3>
                             <p>Commencez par en ajouter une.</p>
-                            <button class="btn btn-primary" onclick="openAddModal()">
+                            <button class="btn btn-primary" onclick="navigate('add')">
                                 <i class="fas fa-plus"></i> Ajouter une recette
                             </button>
                         </div>
@@ -1965,16 +2052,16 @@
                             <span class="text-muted" style="font-size:0.9rem;">${catName}</span>
                         </div>
                         <div class="recipe-view-actions no-print">
-                            <button onclick="toggleFavorite('${recipe.id}')" class="favorite-btn ${recipe.favorite ? 'active' : ''}" title="Favoris" aria-label="Favoris">
+                            <button onclick="toggleFavorite('${recipe.id}')" class="favorite-btn ${recipe.favorite ? 'active' : ''}" title="Favoris">
                                 <i class="fas fa-star"></i>
                             </button>
-                            <button onclick="openCookMode('${recipe.id}')" title="Mode cuisine" aria-label="Mode cuisine">
+                            <button onclick="openCookMode('${recipe.id}')" title="Mode cuisine">
                                 <i class="fas fa-utensils"></i>
                             </button>
-                            <button onclick="openEditRecipe('${recipe.id}')" title="Modifier" aria-label="Modifier">
+                            <button onclick="openEditRecipe('${recipe.id}')" title="Modifier">
                                 <i class="fas fa-edit"></i>
                             </button>
-                            <button onclick="deleteRecipe('${recipe.id}')" title="Supprimer" aria-label="Supprimer">
+                            <button onclick="deleteRecipe('${recipe.id}')" title="Supprimer">
                                 <i class="fas fa-trash" style="color:var(--danger);"></i>
                             </button>
                         </div>
@@ -1995,9 +2082,9 @@
                     ${recipe.servings ? `
                         <div class="servings-adjuster no-print">
                             <span class="label"><i class="fas fa-users"></i> Portions :</span>
-                            <button onclick="adjustServings('${recipe.id}', -1)" aria-label="Moins de portions"><i class="fas fa-minus"></i></button>
+                            <button onclick="adjustServings('${recipe.id}', -1)"><i class="fas fa-minus"></i></button>
                             <span class="servings-display" id="servingsDisplay">${recipe.servings}</span>
-                            <button onclick="adjustServings('${recipe.id}', 1)" aria-label="Plus de portions"><i class="fas fa-plus"></i></button>
+                            <button onclick="adjustServings('${recipe.id}', 1)"><i class="fas fa-plus"></i></button>
                             <span class="text-sm text-muted" style="margin-left:8px;">(les quantités s'ajustent)</span>
                         </div>
                     ` : ''}
@@ -2005,7 +2092,7 @@
                     ${recipe.ingredients.length ? `
                         <div class="recipe-view-section">
                             <h3>🛒 Ingrédients</h3>
-                            <ul id="ingredientList">${ingredientsHTML}</ul>
+                            <ul>${ingredientsHTML}</ul>
                             <button class="btn btn-outline no-print" style="margin-top:8px;" onclick="addToGrocery('${recipe.id}')">
                                 <i class="fas fa-shopping-cart"></i> Ajouter à la liste de courses
                             </button>
@@ -2036,10 +2123,11 @@
         }
 
         // ============================================================
-        //  10. SCANNER OCR
+        //  10. SCANNER
         // ============================================================
         let scanImageData = null;
         let scanResult = null;
+        let scanStream = null;
 
         function renderScan() {
             main.innerHTML = `
@@ -2047,29 +2135,56 @@
                     <h1 class="section-title">📷 Scanner une recette</h1>
                     <p class="text-muted" style="margin-bottom:16px;">Prenez une photo ou sélectionnez une image de votre recette pour l'analyser automatiquement.</p>
 
-                    <div class="scanner-area" id="scannerArea">
-                        <div id="scannerContent">
-                            <i class="fas fa-camera" style="font-size:3rem;color:var(--primary-light);"></i>
-                            <p style="color:var(--text-secondary);">Choisissez une image</p>
-                            <div class="scan-actions">
-                                <button class="btn btn-primary" onclick="captureFromCamera()">
-                                    <i class="fas fa-camera"></i> Prendre une photo
-                                </button>
-                                <button class="btn btn-outline" onclick="uploadImage()">
-                                    <i class="fas fa-folder-open"></i> Choisir une image
-                                </button>
+                    <div class="scanner-container">
+                        <div class="scanner-viewfinder" id="viewfinder">
+                            <div id="placeholderContent" class="placeholder">
+                                <i class="fas fa-camera"></i>
+                                <p>Appuyez sur "Caméra" pour ouvrir l'appareil photo</p>
+                                <p style="font-size:0.8rem;opacity:0.7;">ou choisissez une image depuis votre galerie</p>
                             </div>
-                            <input type="file" id="fileInput" accept="image/*" style="display:none;" onchange="handleFileUpload(event)">
-                            <video id="videoInput" style="display:none;width:100%;max-width:400px;border-radius:var(--radius-sm);" autoplay></video>
-                            <canvas id="canvasCapture" style="display:none;"></canvas>
+                            <video id="videoFeed" style="display:none;width:100%;max-height:500px;object-fit:contain;background:#000;" autoplay playsinline></video>
+                            <canvas id="captureCanvas" style="display:none;"></canvas>
+                            <img id="previewImage" style="display:none;width:100%;max-height:500px;object-fit:contain;background:#000;" />
                         </div>
-                        <div id="scanProgress" style="display:none;" class="scanner-progress">
+
+                        <div class="scanner-controls">
+                            <button class="btn btn-outline" onclick="startCamera()" id="startCameraBtn">
+                                <i class="fas fa-camera"></i> Caméra
+                            </button>
+                            <button class="btn btn-outline" onclick="uploadImage()">
+                                <i class="fas fa-folder-open"></i> Galerie
+                            </button>
+                            <button class="btn btn-capture pulse-ring" onclick="capturePhoto()" id="captureBtn" style="display:none;">
+                                <i class="fas fa-circle"></i>
+                            </button>
+                            <button class="btn btn-danger" onclick="stopCamera()" id="stopCameraBtn" style="display:none;">
+                                <i class="fas fa-stop"></i> Arrêter
+                            </button>
+                            <input type="file" id="fileInput" accept="image/*" style="display:none;" onchange="handleFileUpload(event)">
+                        </div>
+
+                        <div class="scanner-progress" id="scanProgress">
                             <div class="progress-bar">
                                 <div class="fill" id="progressFill" style="width:0%"></div>
                             </div>
                             <div class="progress-text" id="progressText">Analyse en cours...</div>
                         </div>
-                        <div id="scanResult" style="display:none;"></div>
+
+                        <div class="scan-result" id="scanResult">
+                            <h3 class="result-title">📋 Résultat de l'analyse</h3>
+                            <div id="resultContent"></div>
+                            <div class="result-actions">
+                                <button class="btn btn-success" onclick="acceptScanResult()">
+                                    <i class="fas fa-check"></i> Enregistrer
+                                </button>
+                                <button class="btn btn-outline" onclick="editScanResult()">
+                                    <i class="fas fa-edit"></i> Modifier
+                                </button>
+                                <button class="btn" onclick="resetScan()">
+                                    <i class="fas fa-redo"></i> Recommencer
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                     <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;">
@@ -2079,76 +2194,81 @@
             `;
         }
 
-        function openScanModal() {
-            navigate('scan');
-        }
+        // ===== CAMERA FUNCTIONS =====
+        async function startCamera() {
+            const video = document.getElementById('videoFeed');
+            const placeholder = document.getElementById('placeholderContent');
+            const startBtn = document.getElementById('startCameraBtn');
+            const captureBtn = document.getElementById('captureBtn');
+            const stopBtn = document.getElementById('stopCameraBtn');
 
-        function captureFromCamera() {
-            const video = document.getElementById('videoInput');
-            const fileInput = document.getElementById('fileInput');
-            
-            // Masquer le contenu initial
-            document.getElementById('scannerContent').style.display = 'none';
-            
-            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-                navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
-                    .then(stream => {
-                        video.srcObject = stream;
-                        video.style.display = 'block';
-                        video.play();
-                        
-                        // Ajouter un bouton pour capturer
-                        const captureBtn = document.createElement('button');
-                        captureBtn.className = 'btn btn-primary';
-                        captureBtn.innerHTML = '<i class="fas fa-camera"></i> Capturer';
-                        captureBtn.onclick = () => capturePhoto(video, stream);
-                        
-                        const cancelBtn = document.createElement('button');
-                        cancelBtn.className = 'btn btn-outline';
-                        cancelBtn.innerHTML = '<i class="fas fa-times"></i> Annuler';
-                        cancelBtn.onclick = () => {
-                            stream.getTracks().forEach(track => track.stop());
-                            video.style.display = 'none';
-                            video.srcObject = null;
-                            captureBtn.remove();
-                            cancelBtn.remove();
-                            document.getElementById('scannerContent').style.display = 'block';
-                        };
-                        
-                        const btnContainer = document.createElement('div');
-                        btnContainer.className = 'scan-actions';
-                        btnContainer.style.marginTop = '12px';
-                        btnContainer.appendChild(captureBtn);
-                        btnContainer.appendChild(cancelBtn);
-                        video.parentNode.appendChild(btnContainer);
-                    })
-                    .catch(err => {
-                        showToast('❌ Impossible d\'accéder à la caméra', 'error');
-                        document.getElementById('scannerContent').style.display = 'block';
-                    });
-            } else {
-                showToast('❌ La caméra n\'est pas disponible', 'error');
-                document.getElementById('scannerContent').style.display = 'block';
+            try {
+                if (state.scanStream) {
+                    state.scanStream.getTracks().forEach(track => track.stop());
+                    state.scanStream = null;
+                }
+
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    video: { facingMode: 'environment', width: { ideal: 1280 }, height: { ideal: 720 } }
+                });
+
+                state.scanStream = stream;
+                video.srcObject = stream;
+                video.style.display = 'block';
+                placeholder.style.display = 'none';
+                startBtn.style.display = 'none';
+                captureBtn.style.display = 'flex';
+                stopBtn.style.display = 'flex';
+
+                // Masquer les résultats précédents
+                document.getElementById('scanResult').classList.remove('active');
+                document.getElementById('scanProgress').classList.remove('active');
+
+                showToast('📷 Caméra activée', 'info');
+
+            } catch (error) {
+                console.error('Erreur caméra:', error);
+                showToast('❌ Impossible d\'accéder à la caméra', 'error');
             }
         }
 
-        function capturePhoto(video, stream) {
-            const canvas = document.getElementById('canvasCapture');
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            canvas.getContext('2d').drawImage(video, 0, 0);
-            const dataUrl = canvas.toDataURL('image/jpeg', 0.9);
-            
-            // Arrêter le stream
-            stream.getTracks().forEach(track => track.stop());
+        function stopCamera() {
+            if (state.scanStream) {
+                state.scanStream.getTracks().forEach(track => track.stop());
+                state.scanStream = null;
+            }
+            const video = document.getElementById('videoFeed');
             video.style.display = 'none';
             video.srcObject = null;
-            
-            // Supprimer les boutons
-            const btns = video.parentNode.querySelectorAll('.scan-actions');
-            btns.forEach(b => b.remove());
-            
+            document.getElementById('placeholderContent').style.display = 'block';
+            document.getElementById('startCameraBtn').style.display = 'flex';
+            document.getElementById('captureBtn').style.display = 'none';
+            document.getElementById('stopCameraBtn').style.display = 'none';
+            showToast('📷 Caméra arrêtée', 'info');
+        }
+
+        function capturePhoto() {
+            const video = document.getElementById('videoFeed');
+            const canvas = document.getElementById('captureCanvas');
+            canvas.width = video.videoWidth || 1280;
+            canvas.height = video.videoHeight || 720;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const dataUrl = canvas.toDataURL('image/jpeg', 0.9);
+
+            // Afficher l'aperçu
+            const preview = document.getElementById('previewImage');
+            preview.src = dataUrl;
+            preview.style.display = 'block';
+            video.style.display = 'none';
+
+            scanImageData = dataUrl;
             processImage(dataUrl);
+
+            // Arrêter la caméra après capture
+            stopCamera();
+
+            showToast('📸 Photo capturée ! Analyse en cours...', 'info');
         }
 
         function uploadImage() {
@@ -2158,39 +2278,37 @@
         function handleFileUpload(event) {
             const file = event.target.files[0];
             if (!file) return;
-            
+
             const reader = new FileReader();
             reader.onload = (e) => {
                 const dataUrl = e.target.result;
+                const preview = document.getElementById('previewImage');
+                preview.src = dataUrl;
+                preview.style.display = 'block';
+                document.getElementById('videoFeed').style.display = 'none';
+                document.getElementById('placeholderContent').style.display = 'none';
+
+                scanImageData = dataUrl;
                 processImage(dataUrl);
+                showToast('📷 Image chargée ! Analyse en cours...', 'info');
             };
             reader.readAsDataURL(file);
         }
 
+        // ===== OCR PROCESSING =====
         async function processImage(dataUrl) {
-            scanImageData = dataUrl;
-            
-            // Afficher l'aperçu
-            const preview = document.createElement('img');
-            preview.src = dataUrl;
-            preview.className = 'preview-image';
-            preview.alt = 'Aperçu de la recette';
-            
-            const content = document.getElementById('scannerContent');
-            content.innerHTML = '';
-            content.appendChild(preview);
-            
-            // Afficher la progression
             const progress = document.getElementById('scanProgress');
-            progress.style.display = 'block';
             const fill = document.getElementById('progressFill');
             const text = document.getElementById('progressText');
-            
+            const resultDiv = document.getElementById('scanResult');
+
+            progress.classList.add('active');
+            resultDiv.classList.remove('active');
+
             try {
-                // Analyser avec Tesseract.js
-                text.textContent = 'Analyse du texte... 0%';
-                fill.style.width = '10%';
-                
+                text.textContent = 'Préparation de l\'analyse...';
+                fill.style.width = '5%';
+
                 const result = await Tesseract.recognize(dataUrl, 'fra', {
                     logger: (m) => {
                         if (m.status === 'recognizing text') {
@@ -2200,29 +2318,29 @@
                         }
                     }
                 });
-                
+
                 fill.style.width = '95%';
                 text.textContent = 'Interprétation de la recette...';
-                
-                // Extraire et structurer les données
+
                 const extracted = extractRecipeData(result.data.text);
                 scanResult = extracted;
-                
+
                 fill.style.width = '100%';
                 text.textContent = '✅ Analyse terminée !';
-                
+
                 setTimeout(() => {
+                    progress.classList.remove('active');
                     showScanResult(extracted);
                 }, 500);
-                
+
             } catch (error) {
                 console.error('Erreur OCR:', error);
                 showToast('❌ Erreur lors de l\'analyse de l\'image', 'error');
-                progress.style.display = 'none';
-                document.getElementById('scannerContent').style.display = 'block';
+                progress.classList.remove('active');
             }
         }
 
+        // ===== EXTRACT RECIPE DATA =====
         function extractRecipeData(text) {
             const lines = text.split('\n').filter(line => line.trim());
             const result = {
@@ -2237,81 +2355,74 @@
                 temperature: null,
                 difficulty: 'Moyen'
             };
-            
-            // Détection du titre (première ligne non vide)
+
+            // Détection du titre
             if (lines.length > 0) {
                 let titleCandidate = lines[0].trim();
-                // Nettoyer les caractères spéciaux
                 titleCandidate = titleCandidate.replace(/^[\d\s.:-]+/, '').trim();
-                if (titleCandidate.length > 2) {
+                if (titleCandidate.length > 2 && titleCandidate.length < 80) {
                     result.title = titleCandidate;
                 }
             }
-            
-            // Détection du temps
+
+            // Détection des temps
             const timeRegex = /(?:pr[ée]paration|prep)[\s:]*(\d+)\s*(?:min|mn)/i;
             const cookRegex = /(?:cuisson|cook)[\s:]*(\d+)\s*(?:min|mn)/i;
             const restRegex = /(?:repos|rest)[\s:]*(\d+)\s*(?:min|mn)/i;
             const tempRegex = /(?:temp[ée]rature|thermostat)[\s:]*(\d+)/i;
             const servingsRegex = /(?:pour|servir|personnes|parts)[\s:]*(\d+)/i;
-            
+
             for (const line of lines) {
                 const timeMatch = line.match(timeRegex);
                 if (timeMatch) result.prepTime = parseInt(timeMatch[1]);
-                
+
                 const cookMatch = line.match(cookRegex);
                 if (cookMatch) result.cookTime = parseInt(cookMatch[1]);
-                
+
                 const restMatch = line.match(restRegex);
                 if (restMatch) result.restTime = parseInt(restMatch[1]);
-                
+
                 const tempMatch = line.match(tempRegex);
                 if (tempMatch) result.temperature = parseInt(tempMatch[1]);
-                
+
                 const servingsMatch = line.match(servingsRegex);
                 if (servingsMatch) result.servings = parseInt(servingsMatch[1]);
             }
-            
+
             // Détection des ingrédients et étapes
             let ingredients = [];
             let steps = [];
             let isIngredients = false;
             let isSteps = false;
-            
+
             for (let i = 1; i < lines.length; i++) {
                 const line = lines[i].trim();
                 if (!line) continue;
-                
-                // Détection des sections
+
                 const lower = line.toLowerCase();
                 if (lower.includes('ingrédient') || lower.includes('ingredients')) {
                     isIngredients = true;
                     isSteps = false;
                     continue;
                 }
-                if (lower.includes('préparation') || lower.includes('preparation') || 
+                if (lower.includes('préparation') || lower.includes('preparation') ||
                     lower.includes('étapes') || lower.includes('etapes') || lower.includes('instructions')) {
                     isIngredients = false;
                     isSteps = true;
                     continue;
                 }
-                
-                // Détection des ingrédients (lignes avec des nombres ou unités)
+
                 const ingRegex = /^[\d.,]+\s*(?:g|kg|ml|cl|l|cuillère|cuill|pincée|poignée|sachet|verre|pièce|oeuf|œuf|tasse|bol|cs|cc|cas|cac|tbsp|tsp)/i;
                 const amountRegex = /^[\d.,]+\s*(?:g|kg|ml|cl|l)/i;
-                
+
                 if (isIngredients && (ingRegex.test(line) || amountRegex.test(line) || line.includes('-'))) {
-                    // Essayer de parser l'ingrédient
                     const match = line.match(/^([\d.,]+\s*[a-zA-Z]*)\s*(.+)/);
                     if (match) {
                         const amountPart = match[1].trim();
                         const namePart = match[2].trim();
-                        // Essayer de séparer quantité et unité
                         const unitMatch = amountPart.match(/^([\d.,]+)\s*([a-zA-Z]*)/);
                         if (unitMatch) {
-                            const amount = unitMatch[1];
-                            const unit = unitMatch[2] || '';
-                            ingredients.push({ amount, unit, name: namePart });
+                            ingredients.push({ amount: unitMatch[1], unit: unitMatch[2] || '', name: namePart });
                         } else {
                             ingredients.push({ amount: amountPart, unit: '', name: namePart });
                         }
@@ -2319,17 +2430,15 @@
                         ingredients.push({ amount: '', unit: '', name: line.replace(/^[-•]\s*/, '') });
                     }
                 } else if (isSteps && !lower.includes('ingrédient')) {
-                    // Nettoyer les numéros d'étape
                     let step = line.replace(/^[\d.]+[\s.]*/, '').trim();
                     if (step && step.length > 3) {
                         steps.push(step);
                     }
                 }
             }
-            
-            // Si on a détecté peu d'ingrédients ou d'étapes, essayer une autre approche
+
+            // Si peu d'ingrédients, chercher autrement
             if (ingredients.length < 2) {
-                // Chercher des lignes avec des nombres
                 const ingPattern = /^[\d.,]+\s*(?:g|kg|ml|cl|l|cuillère|cuill|pincée|poignée|sachet|verre|pièce|oeuf|œuf|tasse|bol|cs|cc|cas|cac|tbsp|tsp)/i;
                 for (const line of lines) {
                     if (ingPattern.test(line) && !line.toLowerCase().includes('préparation')) {
@@ -2347,13 +2456,13 @@
                     }
                 }
             }
-            
-            // Si on a peu d'étapes, prendre les lignes qui semblent être des instructions
+
+            // Si peu d'étapes, prendre des lignes longues
             if (steps.length < 2) {
                 let stepLines = [];
                 for (const line of lines) {
                     const trimmed = line.trim();
-                    if (trimmed && trimmed.length > 10 && 
+                    if (trimmed && trimmed.length > 10 &&
                         !trimmed.match(/^[\d.,]+\s*(?:g|kg|ml|cl|l|cuillère|cuill|pincée)/i) &&
                         !trimmed.toLowerCase().includes('ingrédient') &&
                         !trimmed.toLowerCase().includes('préparation') &&
@@ -2365,121 +2474,100 @@
                     steps = stepLines;
                 }
             }
-            
+
             result.ingredients = ingredients;
             result.steps = steps;
-            
+
             // Déterminer la difficulté
             if (steps.length > 8) result.difficulty = 'Difficile';
             else if (steps.length > 4) result.difficulty = 'Moyen';
             else result.difficulty = 'Facile';
-            
-            // Si le titre n'a pas été trouvé, utiliser une ligne descriptive
+
             if (!result.title && lines.length > 0) {
                 for (const line of lines) {
                     const trimmed = line.trim();
-                    if (trimmed && trimmed.length > 3 && trimmed.length < 50 && 
+                    if (trimmed && trimmed.length > 3 && trimmed.length < 50 &&
                         !trimmed.match(/^[\d.,]+\s*(?:g|kg|ml|cl|l)/i)) {
                         result.title = trimmed;
                         break;
                     }
                 }
             }
-            
-            // Si toujours pas de titre, utiliser "Recette scannée"
+
             if (!result.title) result.title = 'Recette scannée';
-            
+
             return result;
         }
 
+        // ===== SHOW SCAN RESULT =====
         function showScanResult(data) {
             const resultDiv = document.getElementById('scanResult');
-            resultDiv.style.display = 'block';
-            resultDiv.innerHTML = `
-                <div class="scan-result">
-                    <h3 style="font-family:var(--font-serif);margin-bottom:8px;">📋 Résultat de l'analyse</h3>
-                    
-                    <div class="detected-field">
-                        <span class="label">Titre :</span>
-                        <span class="value"><strong>${data.title || 'Non détecté'}</strong></span>
+            const content = document.getElementById('resultContent');
+
+            const ingredientsHTML = data.ingredients.map(ing =>
+                `<li style="padding:2px 0;border-bottom:1px solid var(--border);">
+                    ${ing.amount || ''} ${ing.unit || ''} ${ing.name}
+                </li>`
+            ).join('');
+
+            const stepsHTML = data.steps.map(step =>
+                `<li style="padding:4px 0;border-bottom:1px solid var(--border);">${step}</li>`
+            ).join('');
+
+            content.innerHTML = `
+                <div class="result-field">
+                    <span class="label">Titre :</span>
+                    <span class="value"><strong>${data.title || 'Non détecté'}</strong></span>
+                </div>
+                ${data.prepTime ? `
+                    <div class="result-field">
+                        <span class="label">Préparation :</span>
+                        <span class="value">${data.prepTime} min</span>
                     </div>
-                    
-                    ${data.prepTime ? `
-                        <div class="detected-field">
-                            <span class="label">Préparation :</span>
-                            <span class="value">${data.prepTime} min</span>
-                        </div>
-                    ` : ''}
-                    
-                    ${data.cookTime ? `
-                        <div class="detected-field">
-                            <span class="label">Cuisson :</span>
-                            <span class="value">${data.cookTime} min</span>
-                        </div>
-                    ` : ''}
-                    
-                    ${data.temperature ? `
-                        <div class="detected-field">
-                            <span class="label">Température :</span>
-                            <span class="value">${data.temperature} °C</span>
-                        </div>
-                    ` : ''}
-                    
-                    ${data.servings ? `
-                        <div class="detected-field">
-                            <span class="label">Portions :</span>
-                            <span class="value">${data.servings} personnes</span>
-                        </div>
-                    ` : ''}
-                    
-                    <div class="detected-field" style="border-bottom:2px solid var(--primary);">
-                        <span class="label">Difficulté :</span>
-                        <span class="value">${data.difficulty || 'Non détectée'}</span>
+                ` : ''}
+                ${data.cookTime ? `
+                    <div class="result-field">
+                        <span class="label">Cuisson :</span>
+                        <span class="value">${data.cookTime} min</span>
                     </div>
-                    
-                    <div style="margin:12px 0 8px;">
-                        <strong>🛒 Ingrédients (${data.ingredients.length})</strong>
-                        <ul style="list-style:none;padding:0;margin-top:4px;">
-                            ${data.ingredients.map(ing => `
-                                <li style="padding:2px 0;border-bottom:1px solid var(--border);">
-                                    ${ing.amount || ''} ${ing.unit || ''} ${ing.name}
-                                </li>
-                            `).join('')}
-                            ${data.ingredients.length === 0 ? '<li style="color:var(--text-light);">Aucun ingrédient détecté</li>' : ''}
-                        </ul>
+                ` : ''}
+                ${data.temperature ? `
+                    <div class="result-field">
+                        <span class="label">Température :</span>
+                        <span class="value">${data.temperature} °C</span>
                     </div>
-                    
-                    <div style="margin:12px 0 8px;">
-                        <strong>👨‍🍳 Étapes (${data.steps.length})</strong>
-                        <ol style="padding-left:20px;margin-top:4px;">
-                            ${data.steps.map(step => `
-                                <li style="padding:4px 0;border-bottom:1px solid var(--border);">${step}</li>
-                            `).join('')}
-                            ${data.steps.length === 0 ? '<li style="color:var(--text-light);">Aucune étape détectée</li>' : ''}
-                        </ol>
+                ` : ''}
+                ${data.servings ? `
+                    <div class="result-field">
+                        <span class="label">Portions :</span>
+                        <span class="value">${data.servings} personnes</span>
                     </div>
-                    
-                    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
-                        <button class="btn btn-success" onclick="acceptScanResult()">
-                            <i class="fas fa-check"></i> Accepter et enregistrer
-                        </button>
-                        <button class="btn btn-outline" onclick="editScanResult()">
-                            <i class="fas fa-edit"></i> Modifier avant enregistrement
-                        </button>
-                        <button class="btn" onclick="resetScan()">
-                            <i class="fas fa-redo"></i> Recommencer
-                        </button>
-                    </div>
+                ` : ''}
+                <div class="result-field" style="border-bottom:2px solid var(--primary);">
+                    <span class="label">Difficulté :</span>
+                    <span class="value">${data.difficulty || 'Non détectée'}</span>
+                </div>
+                <div style="margin:12px 0 8px;">
+                    <strong>🛒 Ingrédients (${data.ingredients.length})</strong>
+                    <ul style="list-style:none;padding:0;margin-top:4px;">
+                        ${ingredientsHTML || '<li style="color:var(--text-light);">Aucun ingrédient détecté</li>'}
+                    </ul>
+                </div>
+                <div style="margin:12px 0 8px;">
+                    <strong>👨‍🍳 Étapes (${data.steps.length})</strong>
+                    <ol style="padding-left:20px;margin-top:4px;">
+                        ${stepsHTML || '<li style="color:var(--text-light);">Aucune étape détectée</li>'}
+                    </ol>
                 </div>
             `;
-            
-            document.getElementById('scanProgress').style.display = 'none';
+
+            resultDiv.classList.add('active');
         }
 
+        // ===== SCAN RESULT ACTIONS =====
         function acceptScanResult() {
             if (!scanResult) return;
-            
-            // Créer une nouvelle recette à partir du scan
+
             const recipe = {
                 id: generateId(),
                 title: scanResult.title || 'Recette scannée',
@@ -2500,14 +2588,14 @@
                 createdAt: new Date().toISOString(),
                 updatedAt: new Date().toISOString()
             };
-            
-            // Ouvrir l'éditeur avec les données du scan
+
             navigate('edit', recipe);
+            showToast('✅ Recette prête à être modifiée', 'success');
         }
 
         function editScanResult() {
             if (!scanResult) return;
-            
+
             const recipe = {
                 id: generateId(),
                 title: scanResult.title || 'Recette scannée',
@@ -2528,43 +2616,38 @@
                 createdAt: new Date().toISOString(),
                 updatedAt: new Date().toISOString()
             };
-            
+
             navigate('edit', recipe);
         }
 
         function resetScan() {
             scanImageData = null;
             scanResult = null;
-            document.getElementById('scanResult').style.display = 'none';
-            document.getElementById('scanProgress').style.display = 'none';
-            document.getElementById('scannerContent').style.display = 'block';
-            document.getElementById('scannerContent').innerHTML = `
-                <i class="fas fa-camera" style="font-size:3rem;color:var(--primary-light);"></i>
-                <p style="color:var(--text-secondary);">Choisissez une image</p>
-                <div class="scan-actions">
-                    <button class="btn btn-primary" onclick="captureFromCamera()">
-                        <i class="fas fa-camera"></i> Prendre une photo
-                    </button>
-                    <button class="btn btn-outline" onclick="uploadImage()">
-                        <i class="fas fa-folder-open"></i> Choisir une image
-                    </button>
-                </div>
-            `;
+            document.getElementById('scanResult').classList.remove('active');
+            document.getElementById('scanProgress').classList.remove('active');
+            document.getElementById('previewImage').style.display = 'none';
+            document.getElementById('videoFeed').style.display = 'none';
+            document.getElementById('placeholderContent').style.display = 'block';
+            document.getElementById('startCameraBtn').style.display = 'flex';
+            document.getElementById('captureBtn').style.display = 'none';
+            document.getElementById('stopCameraBtn').style.display = 'none';
+
+            if (state.scanStream) {
+                state.scanStream.getTracks().forEach(track => track.stop());
+                state.scanStream = null;
+            }
+
+            showToast('🔄 Scanner réinitialisé', 'info');
         }
 
         // ============================================================
         //  11. ADD RECIPE
         // ============================================================
-        function openAddModal() {
-            navigate('add');
-        }
-
         function renderAddRecipe(data) {
             const recipe = data || {};
             const isEdit = !!recipe.id;
             const title = isEdit ? 'Modifier la recette' : 'Ajouter une recette';
 
-            // Construction du formulaire
             const catOptions = state.categories.map(c =>
                 `<option value="${c.id}" ${c.id === recipe.categoryId ? 'selected' : ''}>${c.icon} ${c.name}</option>`
             ).join('');
@@ -2700,9 +2783,6 @@
             renderAddRecipe(recipe);
         }
 
-        // ============================================================
-        //  12. SAVE RECIPE
-        // ============================================================
         function addIngredientField() {
             const container = document.getElementById('ingredientListEditor');
             const input = document.createElement('div');
@@ -2729,6 +2809,9 @@
             container.insertBefore(input, container.lastElementChild);
         }
 
+        // ============================================================
+        //  12. SAVE RECIPE
+        // ============================================================
         async function saveRecipe(e) {
             e.preventDefault();
 
@@ -2736,7 +2819,6 @@
             const title = document.getElementById('recipeTitle').value.trim();
             if (!title) { showToast('⚠️ Le titre est obligatoire', 'error'); return; }
 
-            // Collecter les ingrédients
             const ingItems = document.querySelectorAll('#ingredientListEditor .list-item');
             const ingredients = [];
             ingItems.forEach(el => {
@@ -2746,7 +2828,6 @@
                 if (name.trim()) ingredients.push({ amount: amount.trim(), unit: unit.trim(), name: name.trim() });
             });
 
-            // Collecter les étapes
             const stepItems = document.querySelectorAll('#stepListEditor .list-item');
             const steps = [];
             stepItems.forEach(el => {
@@ -2775,7 +2856,6 @@
                 updatedAt: new Date().toISOString(),
             };
 
-            // Calculer le temps total
             recipe.totalTime = recipe.prepTime + recipe.cookTime + recipe.restTime;
 
             try {
@@ -3284,6 +3364,12 @@
             overlay.classList.remove('active');
             document.getElementById('cookMode').classList.remove('active');
 
+            // Arrêter la caméra si on change de page
+            if (state.scanStream) {
+                state.scanStream.getTracks().forEach(track => track.stop());
+                state.scanStream = null;
+            }
+
             if (page === 'view' && data) {
                 render('view', data);
             } else if (page === 'edit' && data) {
@@ -3373,7 +3459,7 @@
                     e.preventDefault();
                     const page = el.dataset.page;
                     if (page === 'add') {
-                        openAddModal();
+                        navigate('add');
                     } else {
                         navigate(page);
                     }
@@ -3384,6 +3470,10 @@
                 if (e.key === 'Escape') {
                     overlay.classList.remove('active');
                     document.getElementById('cookMode').classList.remove('active');
+                    if (state.scanStream) {
+                        state.scanStream.getTracks().forEach(track => track.stop());
+                        state.scanStream = null;
+                    }
                 }
             });
 
@@ -3406,8 +3496,6 @@
 
         // Exposer globalement
         window.navigate = navigate;
-        window.openAddModal = openAddModal;
-        window.openScanModal = openScanModal;
         window.openEditRecipe = openEditRecipe;
         window.deleteRecipe = deleteRecipe;
         window.toggleFavorite = toggleFavorite;
@@ -3437,7 +3525,11 @@
         window.updateSetting = updateSetting;
         window.renderGrocery = renderGrocery;
         window.loadData = loadData;
-        window.captureFromCamera = captureFromCamera;
+
+        // Scanner
+        window.startCamera = startCamera;
+        window.stopCamera = stopCamera;
+        window.capturePhoto = capturePhoto;
         window.uploadImage = uploadImage;
         window.handleFileUpload = handleFileUpload;
         window.acceptScanResult = acceptScanResult;
